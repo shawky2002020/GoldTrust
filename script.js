@@ -65,14 +65,12 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.fromTo(
       title,
       {
-        letterSpacing: '10px',
         opacity: 0,
         x: 300,
         skewX: 100,
         duration: 1,
       },
       {
-        letterSpacing: '0',
         opacity: 1,
         x: 0,
         skewX: 0,
