@@ -176,7 +176,6 @@ gsap.fromTo('.card' ,{
     scrollTrigger:{
         trigger:'.card',
         end: 'bottom 50%',
-        markers:true
 
     }
 })
