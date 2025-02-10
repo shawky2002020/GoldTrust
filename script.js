@@ -67,13 +67,13 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         opacity: 0,
         x: 300,
-      
+        skewX: 100,
         duration: 1,
       },
       {
         opacity: 1,
         x: 0,
-    
+        skewX: 0,
         duration: 2,
         scrollTrigger: {
           trigger: title,
