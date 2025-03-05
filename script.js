@@ -1,3 +1,7 @@
+window.addEventListener("load", () => {
+  document.body.classList.add("loaded");
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   const lenis = new Lenis({
     duration: 1.2,
@@ -10,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     touchMultiplier: 2,
     infinite: false,
   });
-
+ 
   //get scroll value
   // lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
   //   console.log({ scroll, limit, velocity, direction, progress })
@@ -25,12 +29,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   gsap.registerPlugin(ScrollTrigger);
 
+
+ 
+
   gsap.from('.logo div', {
     opacity: 0,
     delay: 1,
     x: 20,
   });
 
+  
+  
   const menu_items = document.querySelector('.menu-items');
   gsap.from(menu_items.children, {
     opacity: 0,
@@ -71,6 +80,8 @@ document.addEventListener('DOMContentLoaded', () => {
         duration: 1,
       },
       {
+        
+        
         opacity: 1,
         x: 0,
         skewX: 0,
